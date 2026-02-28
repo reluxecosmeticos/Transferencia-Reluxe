@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!doctype html&gt;</p>
+<p class="p1">&lt;html lang="es"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width,initial-scale=1" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Datos para transferencia — Reluxe Cosméticos&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="Copia rápida de datos bancarios Reluxe Cosméticos" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root { --bg:#ffffff; --fg:#111; --muted:#666; --card:#f6f6f8; --btn:#111; --btnfg:#fff; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>*{ box-sizing:border-box; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin:0; font-family: -apple-system, system-ui, Segoe UI, Roboto, Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:var(--bg); color:var(--fg);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:flex; min-height:100vh; align-items:center; justify-content:center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding:24px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.wrap{ width:min(720px, 100%); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:var(--card);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius:18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding:22px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 10px 30px rgba(0,0,0,.06);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h1{ margin:0 0 6px; font-size:22px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>p{ margin:0 0 16px; color:var(--muted); line-height:1.35; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.grid{ display:grid; gap:12px; grid-template-columns: 1fr; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (min-width:680px){ .grid{ grid-template-columns: 1fr 1fr; } }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.row{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:#fff; border-radius:14px; padding:14px 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid rgba(0,0,0,.06);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:flex; flex-direction:column; gap:8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.label{ font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.value{ font-size:16px; font-weight:600; word-break:break-word; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.actions{ display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>button{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>appearance:none; border:0; border-radius:12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding:12px 14px; cursor:pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:var(--btn); color:var(--btnfg); font-weight:700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>button.secondary{ background:#fff; color:#111; border:1px solid rgba(0,0,0,.15); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.toast{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top:12px; font-size:14px; color:var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-height:20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hint{ margin-top:10px; font-size:13px; color:var(--muted); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>textarea{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width:100%; min-height:92px; padding:12px; border-radius:12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid rgba(0,0,0,.15); margin-top:10px; resize:vertical;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size:13px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.small { font-size:12px; color:var(--muted); margin-top:10px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;main class="wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1&gt;Datos para transferencia&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Escanea, toca “Copiar” y pega en tu app bancaria. (Funciona perfecto en iPhone y Android.)&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="grid" aria-label="Datos"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="label"&gt;Nombre&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="value" id="nombre"&gt;Reluxe Cosméticos Ltda.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="secondary" onclick="copyOne('nombre')"&gt;Copiar nombre&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="label"&gt;RUT&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="value" id="rut"&gt;772534817&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="secondary" onclick="copyOne('rut')"&gt;Copiar RUT&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="label"&gt;Email&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="value" id="email"&gt;pagos@reluxe.cl&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="secondary" onclick="copyOne('email')"&gt;Copiar email&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="secondary" onclick="openMail()"&gt;Enviar correo&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="label"&gt;Número de cuenta&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="value" id="cuenta"&gt;21670189110&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="secondary" onclick="copyOne('cuenta')"&gt;Copiar cuenta&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button onclick="copyAll()"&gt;Copiar TODO&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="secondary" onclick="selectAllText()"&gt;Seleccionar texto&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="toast" id="toast" role="status" aria-live="polite"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="hint"&gt;Si tu navegador bloquea el portapapeles, usa “Seleccionar texto” y luego copia manualmente.&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;textarea id="allText" readonly&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="small"&gt;Tip: genera el QR apuntando a la URL donde publiques esta página (por ejemplo, tu Linktree/Canva site, GitHub Pages o Netlify).&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const data = {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>nombre: "Reluxe Cosméticos Ltda.",</p>
+<p class="p1"><span class="Apple-converted-space">      </span>rut: "772534817",</p>
+<p class="p1"><span class="Apple-converted-space">      </span>email: "pagos@reluxe.cl",</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cuenta: "21670189110"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const toastEl = document.getElementById("toast");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const allTextEl = document.getElementById("allText");</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function buildAllText(){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>return [</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`Nombre: ${data.nombre}`,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`RUT: ${data.rut}`,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`Email: ${data.email}`,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`Número de cuenta: ${data.cuenta}`</p>
+<p class="p1"><span class="Apple-converted-space">      </span>].join("\n");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function showToast(msg){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>toastEl.textContent = msg;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>clearTimeout(showToast._t);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>showToast._t = setTimeout(() =&gt; toastEl.textContent = "", 2500);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>async function copyText(text){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Prefer Clipboard API (best on iPhone Safari when triggered by a click)</p>
+<p class="p1"><span class="Apple-converted-space">      </span>try{</p>
+<p class="p1"><span class="Apple-converted-space">        </span>await navigator.clipboard.writeText(text);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return true;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}catch(e){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Fallback to execCommand</p>
+<p class="p1"><span class="Apple-converted-space">        </span>try{</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const ta = document.createElement("textarea");</p>
+<p class="p1"><span class="Apple-converted-space">          </span>ta.value = text;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>ta.style.position = "fixed";</p>
+<p class="p1"><span class="Apple-converted-space">          </span>ta.style.left = "-9999px";</p>
+<p class="p1"><span class="Apple-converted-space">          </span>ta.style.top = "-9999px";</p>
+<p class="p1"><span class="Apple-converted-space">          </span>document.body.appendChild(ta);</p>
+<p class="p1"><span class="Apple-converted-space">          </span>ta.focus();</p>
+<p class="p1"><span class="Apple-converted-space">          </span>ta.select();</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const ok = document.execCommand("copy");</p>
+<p class="p1"><span class="Apple-converted-space">          </span>document.body.removeChild(ta);</p>
+<p class="p1"><span class="Apple-converted-space">          </span>return ok;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}catch(_){</p>
+<p class="p1"><span class="Apple-converted-space">          </span>return false;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>async function copyOne(id){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const text = data[id] ?? document.getElementById(id)?.textContent ?? "";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const ok = await copyText(text);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>showToast(ok ? "✅ Copiado al portapapeles" : "⚠️ No se pudo copiar. Usa 'Seleccionar texto'.");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>async function copyAll(){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const text = buildAllText();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const ok = await copyText(text);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>showToast(ok ? "✅ Datos completos copiados" : "⚠️ No se pudo copiar. Usa 'Seleccionar texto'.");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function selectAllText(){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>allTextEl.focus();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>allTextEl.select();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>showToast("Seleccionado. Ahora toca 'Copiar'.");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function openMail(){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>window.location.href = `mailto:${data.email}`;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Init textarea</p>
+<p class="p1"><span class="Apple-converted-space">    </span>allTextEl.value = buildAllText();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
